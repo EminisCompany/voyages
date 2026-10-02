@@ -13,6 +13,11 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
+      - name: Download Dalamud
+        shell: pwsh
+        run: |
+          Invoke-WebRequest -Uri https://goatcorp.github.io/dalamud-distrib/latest.zip -OutFile latest-dalamud.zip
+          Expand-Archive -Force latest-dalamud.zip "$env:AppData\XIVLauncher\addon\Hooks\dev\"
       - name: Build
         run: dotnet build SubmarineExport/SubmarineExport.csproj -c Release
       - name: Find the plugin zip
