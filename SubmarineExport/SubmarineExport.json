@@ -1,0 +1,11 @@
+{
+  "Author": "EMCO",
+  "Name": "Submarine Export",
+  "Punchline": "Your FC submarines, ranks and builds in one list.",
+  "Description": "Reads the submarines in your free company workshop (name, rank, parts, return time and current route), remembers them across characters, and copies them in the format the Submarine Voyage Planner reads. Open it with /subs.",
+  "InternalName": "SubmarineExport",
+  "ApplicableVersion": "any",
+  "Tags": ["housing", "submarine", "voyages"],
+  "CommandName": "/subs",
+  "RepoUrl": "https://github.com/EminisCompany/SubmarineExport-source"
+}
